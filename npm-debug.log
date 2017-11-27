@@ -1,72 +1,38 @@
 0 info it worked if it ends with ok
 1 verbose cli [ '/home/marcelo/.nvm/versions/node/v6.9.5/bin/node',
 1 verbose cli   '/home/marcelo/.nvm/versions/node/v6.9.5/bin/npm',
-1 verbose cli   'adduser' ]
+1 verbose cli   'version',
+1 verbose cli   'patch',
+1 verbose cli   '-m',
+1 verbose cli   'Se remueve el codigo de iOS porque aumenta mucho el tamano del IPA' ]
 2 info using npm@3.10.10
 3 info using node@v6.9.5
-4 verbose adduser before first PUT { _id: 'org.couchdb.user:marcelofb',
-4 verbose adduser   name: 'marcelofb',
-4 verbose adduser   password: 'XXXXX',
-4 verbose adduser   email: 'marceloburriel@gmail.com',
-4 verbose adduser   type: 'user',
-4 verbose adduser   roles: [],
-4 verbose adduser   date: '2017-11-15T14:25:12.714Z' }
-5 verbose request uri https://registry.npmjs.org/-/user/org.couchdb.user:marcelofb
-6 verbose request new user, so can't send auth
-7 info attempt registry request try #1 at 11:25:12
-8 verbose request id cdba5670ff718e2e
-9 http request PUT https://registry.npmjs.org/-/user/org.couchdb.user:marcelofb
-10 http 401 https://registry.npmjs.org/-/user/org.couchdb.user:marcelofb
-11 verbose headers { 'www-authenticate': 'Basic',
-11 verbose headers   'content-type': 'application/json',
-11 verbose headers   'cache-control': 'max-age=300',
-11 verbose headers   'content-length': '46',
-11 verbose headers   'accept-ranges': 'bytes',
-11 verbose headers   date: 'Wed, 15 Nov 2017 14:25:14 GMT',
-11 verbose headers   via: '1.1 varnish',
-11 verbose headers   connection: 'keep-alive',
-11 verbose headers   'x-served-by': 'cache-gru17130-GRU',
-11 verbose headers   'x-cache': 'MISS',
-11 verbose headers   'x-cache-hits': '0',
-11 verbose headers   'x-timer': 'S1510755913.946296,VS0,VE1728',
-11 verbose headers   vary: 'Accept-Encoding, Accept' }
-12 verbose request invalidating /home/marcelo/.npm/registry.npmjs.org/-/user/org.couchdb.user_3Amarcelofb on PUT
-13 verbose adduser back [ { Error: Registry returned 401 for PUT on https://registry.npmjs.org/-/user/org.couchdb.user:marcelofb
-13 verbose adduser       at makeError (/home/marcelo/.nvm/versions/node/v6.9.5/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
-13 verbose adduser       at CachingRegistryClient.<anonymous> (/home/marcelo/.nvm/versions/node/v6.9.5/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:280:14)
-13 verbose adduser       at Request._callback (/home/marcelo/.nvm/versions/node/v6.9.5/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
-13 verbose adduser       at Request.self.callback (/home/marcelo/.nvm/versions/node/v6.9.5/lib/node_modules/npm/node_modules/request/request.js:187:22)
-13 verbose adduser       at emitTwo (events.js:106:13)
-13 verbose adduser       at Request.emit (events.js:191:7)
-13 verbose adduser       at Request.<anonymous> (/home/marcelo/.nvm/versions/node/v6.9.5/lib/node_modules/npm/node_modules/request/request.js:1048:10)
-13 verbose adduser       at emitOne (events.js:96:13)
-13 verbose adduser       at Request.emit (events.js:188:7)
-13 verbose adduser       at IncomingMessage.<anonymous> (/home/marcelo/.nvm/versions/node/v6.9.5/lib/node_modules/npm/node_modules/request/request.js:969:12) statusCode: 401, code: 'E401' },
-13 verbose adduser   { ok: false, id: 'org.couchdb.user:undefined' },
-13 verbose adduser   '{"ok":false,"id":"org.couchdb.user:undefined"}' ]
-14 warn adduser Incorrect username or password
-14 warn adduser You can reset your account by visiting:
-14 warn adduser
-14 warn adduser     https://npmjs.org/forgot
-15 verbose stack Error: Registry returned 401 for PUT on https://registry.npmjs.org/-/user/org.couchdb.user:marcelofb
-15 verbose stack     at makeError (/home/marcelo/.nvm/versions/node/v6.9.5/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
-15 verbose stack     at CachingRegistryClient.<anonymous> (/home/marcelo/.nvm/versions/node/v6.9.5/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:280:14)
-15 verbose stack     at Request._callback (/home/marcelo/.nvm/versions/node/v6.9.5/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
-15 verbose stack     at Request.self.callback (/home/marcelo/.nvm/versions/node/v6.9.5/lib/node_modules/npm/node_modules/request/request.js:187:22)
-15 verbose stack     at emitTwo (events.js:106:13)
-15 verbose stack     at Request.emit (events.js:191:7)
-15 verbose stack     at Request.<anonymous> (/home/marcelo/.nvm/versions/node/v6.9.5/lib/node_modules/npm/node_modules/request/request.js:1048:10)
-15 verbose stack     at emitOne (events.js:96:13)
-15 verbose stack     at Request.emit (events.js:188:7)
-15 verbose stack     at IncomingMessage.<anonymous> (/home/marcelo/.nvm/versions/node/v6.9.5/lib/node_modules/npm/node_modules/request/request.js:969:12)
-16 verbose statusCode 401
-17 verbose cwd /home/marcelo/proyectos/plugins/cordova-plugin-fingerprint-aio
-18 error Linux 4.8.0-59-generic
-19 error argv "/home/marcelo/.nvm/versions/node/v6.9.5/bin/node" "/home/marcelo/.nvm/versions/node/v6.9.5/bin/npm" "adduser"
-20 error node v6.9.5
-21 error npm  v3.10.10
-22 error code E401
-23 error Registry returned 401 for PUT on https://registry.npmjs.org/-/user/org.couchdb.user:marcelofb
-24 error If you need help, you may report this error at:
-24 error     <https://github.com/npm/npm/issues>
-25 verbose exit [ 1, true ]
+4 info git [ 'status', '--porcelain' ]
+5 verbose stack Error: Git working directory not clean.
+5 verbose stack D npm-debug.log
+5 verbose stack M package.json
+5 verbose stack M plugin.xml
+5 verbose stack D src/ios/Fingerprint.swift
+5 verbose stack     at /home/marcelo/.nvm/versions/node/v6.9.5/lib/node_modules/npm/lib/version.js:247:19
+5 verbose stack     at /home/marcelo/.nvm/versions/node/v6.9.5/lib/node_modules/npm/lib/utils/no-progress-while-running.js:21:8
+5 verbose stack     at ChildProcess.exithandler (child_process.js:197:7)
+5 verbose stack     at emitTwo (events.js:106:13)
+5 verbose stack     at ChildProcess.emit (events.js:191:7)
+5 verbose stack     at maybeClose (internal/child_process.js:877:16)
+5 verbose stack     at Socket.<anonymous> (internal/child_process.js:334:11)
+5 verbose stack     at emitOne (events.js:96:13)
+5 verbose stack     at Socket.emit (events.js:188:7)
+5 verbose stack     at Pipe._handle.close [as _onclose] (net.js:498:12)
+6 verbose cwd /home/marcelo/proyectos/plugins/cordova-plugin-fingerprint-aio
+7 error Linux 4.8.0-59-generic
+8 error argv "/home/marcelo/.nvm/versions/node/v6.9.5/bin/node" "/home/marcelo/.nvm/versions/node/v6.9.5/bin/npm" "version" "patch" "-m" "Se remueve el codigo de iOS porque aumenta mucho el tamano del IPA"
+9 error node v6.9.5
+10 error npm  v3.10.10
+11 error Git working directory not clean.
+11 error D npm-debug.log
+11 error M package.json
+11 error M plugin.xml
+11 error D src/ios/Fingerprint.swift
+12 error If you need help, you may report this error at:
+12 error     <https://github.com/npm/npm/issues>
+13 verbose exit [ 1, true ]

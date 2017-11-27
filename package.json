@@ -20,15 +20,10 @@
     "fingerprint",
     "authentication",
     "ecosystem:cordova",
-    "cordova-android",
-    "cordova-ios",
-    "ios"
+    "cordova-android"
   ],
   "author": "Marcelo Burriel",
   "license": "MIT",
-  "dependencies": {
-    "cordova-plugin-add-swift-support": "^1.7.0"
-  },
   "devDependencies": {
     "cordova-paramedic": "^0.5.0",
     "cordova-plugin-xml": "^0.1.2",
